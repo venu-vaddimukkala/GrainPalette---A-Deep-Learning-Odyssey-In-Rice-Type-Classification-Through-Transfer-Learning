@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Accuracy & Loss Graphs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Training Accuracy & Loss Graphs</h2>
+    <img src="{{ url_for('static', filename='accuracy.png') }}" alt="Accuracy Graph" width="400">
+    <img src="{{ url_for('static', filename='loss.png') }}" alt="Loss Graph" width="400">
+    <br>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+    <br>
+    <a href="{{ url_for('plots') }}">See Training Accuracy & Loss Graphs</a>
+    <br>
+    <a href="{{ url_for('history') }}">View Prediction History</a>
+</body>
+</html>
